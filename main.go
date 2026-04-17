@@ -18,6 +18,9 @@ var entries = []string{
 	"172.66.166.61 linux.do",
 	"172.66.166.61 cdn.linux.do",
 	"172.66.166.61 cdn3.linux.do",
+	"104.20.28.88 wplace.live",
+	"104.20.28.88 backend.wplace.live",
+	"104.20.28.88 maps.wplace.live",
 }
 
 var (
@@ -218,8 +221,7 @@ func launchBrowser() {
 
 	args := []string{
 		"--enable-quic",
-		"--origin-to-force-quic-on=linux.do:443,cdn.linux.do:443,cdn3.linux.do:443",
-		"https://linux.do",
+		"--origin-to-force-quic-on=linux.do:443,cdn.linux.do:443,cdn3.linux.do:443,wplace.live:443,backend.wplace.live:443,maps.wplace.live:443",
 	}
 
 	var browserPath string
