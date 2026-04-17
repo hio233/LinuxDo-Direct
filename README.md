@@ -1,5 +1,5 @@
 # LinuxDo-Direct
-它是什么：一个一键直连 Linux.do 的小工具。
+它是什么：一个一键直连 Linux.do ，wplace.live的小工具。
 
 原理是什么：Hosts 映射 + 强制 QUIC (HTTP/3)。
 
